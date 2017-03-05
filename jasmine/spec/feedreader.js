@@ -94,7 +94,7 @@ $(function() {
         });
 
         it('has at least 1 entry in feed container', function(done) {
-            expect($('.feed .entry')).toBeDefined();
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
 
